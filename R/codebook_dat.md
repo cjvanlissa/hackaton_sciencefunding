@@ -1,4 +1,4 @@
-Codebook created on 2022-07-13 at 2022-07-13 12:45:37
+Codebook created on 2022-07-13 at 2022-07-13 15:04:22
 ================
 
 A codebook contains documentation and metadata describing the contents,
@@ -6,103 +6,4256 @@ structure, and layout of a data file.
 
 ## Dataset description
 
-The data contains 2592 cases and 91 variables.
+The data contains 2574 cases and 89 variables.
 
 ## Codebook
 
-| name                 | type    |    n | missing | unique |  mean | median |    mode | mode_value |     sd |    v | min |     max |   range |   skew | skew_2se |   kurt | kurt_2se |
-|:---------------------|:--------|-----:|--------:|-------:|------:|-------:|--------:|:-----------|-------:|-----:|----:|--------:|--------:|-------:|---------:|-------:|---------:|
-| consultation_active  | integer | 2576 |    0.01 |      3 |  1.00 |   1.00 |    1.00 |            |   0.03 |      | 0.0 |    1.00 |    1.00 | -29.23 |  -303.05 | 853.00 |  4422.91 |
-| language             | factor  | 2592 |    0.00 |      4 |       |        | 1424.00 |            |        | 0.58 |     |         |         |        |          |        |          |
-| is_panel_participant | integer | 2576 |    0.01 |      2 |  0.00 |   0.00 |    0.00 |            |   0.00 |      | 0.0 |    0.00 |    0.00 |        |          |        |          |
-| id_panel             | logical |    0 |    1.00 |      1 |       |        | 2592.00 |            |        |      |     |         |         |        |          |        |          |
-| panel_source         | logical |    0 |    1.00 |      1 |       |        | 2592.00 |            |        |      |     |         |         |        |          |        |          |
-| consent_given        | integer | 2465 |    0.05 |      3 |  1.00 |   1.00 |    1.00 |            |   0.06 |      | 0.0 |    1.00 |    1.00 | -15.60 |  -158.15 | 241.31 |  1224.00 |
-| ktversie             | integer | 1169 |    0.55 |     10 |  4.75 |   5.00 |    5.00 |            |   2.57 |      | 1.0 |    9.00 |    8.00 |   0.12 |     0.83 |  -1.19 |    -4.17 |
-| kt_personal_senior   | numeric | 1169 |    0.55 |    211 |  0.14 |   0.07 |    0.07 |            |   0.19 |      | 0.0 |    1.00 |    1.00 |   2.06 |    14.38 |   5.14 |    17.97 |
-| kt_team              | numeric | 1169 |    0.55 |    227 |  0.16 |   0.12 |    0.12 |            |   0.18 |      | 0.0 |    1.00 |    1.00 |   1.46 |    10.18 |   2.73 |     9.54 |
-| kt_personal_ecr      | numeric | 1169 |    0.55 |    219 |  0.15 |   0.12 |    0.12 |            |   0.16 |      | 0.0 |    1.00 |    1.00 |   1.79 |    12.53 |   4.66 |    16.31 |
-| kt_thematic          | numeric | 1169 |    0.55 |    275 |  0.09 |   0.05 |    0.05 |            |   0.11 |      | 0.0 |    0.74 |    0.74 |   1.51 |    10.52 |   2.86 |    10.02 |
-| kt_thematic_co       | numeric | 1169 |    0.55 |    225 |  0.05 |   0.00 |    0.00 |            |   0.10 |      | 0.0 |    1.00 |    1.00 |   3.95 |    27.63 |  25.25 |    88.30 |
-| kt_small_first       | numeric | 1169 |    0.55 |    206 |  0.15 |   0.09 |    0.09 |            |   0.20 |      | 0.0 |    1.00 |    1.00 |   1.91 |    13.32 |   4.43 |    15.48 |
-| kt_small_second      | numeric | 1169 |    0.55 |    174 |  0.10 |   0.00 |    0.00 |            |   0.16 |      | 0.0 |    1.00 |    1.00 |   2.49 |    17.43 |   8.31 |    29.07 |
-| kt_award             | numeric | 1169 |    0.55 |     53 |  0.09 |   0.00 |    0.00 |            |   0.18 |      | 0.0 |    1.00 |    1.00 |   3.19 |    22.29 |  11.74 |    41.06 |
-| kt_first_ecr         | numeric | 1169 |    0.55 |    277 |  0.25 |   0.21 |    0.21 |            |   0.24 |      | 0.0 |    1.00 |    1.00 |   1.16 |     8.10 |   1.28 |     4.48 |
-| kt_rolling_ecr       | numeric | 1169 |    0.55 |    435 |  0.26 |   0.25 |    0.25 |            |   0.18 |      | 0.0 |    1.00 |    1.00 |   0.60 |     4.20 |   0.67 |     2.34 |
-| kt_rolling_senior    | numeric | 1169 |    0.55 |    371 |  0.16 |   0.14 |    0.14 |            |   0.14 |      | 0.0 |    1.00 |    1.00 |   1.34 |     9.38 |   3.91 |    13.69 |
-| work_life            | integer |  931 |    0.64 |      4 |  0.66 |   0.00 |    0.00 |            |   0.93 |      | 0.0 |    3.00 |    3.00 |   1.52 |     9.46 |   1.44 |     4.51 |
-| grade                | integer |  911 |    0.65 |     11 |  7.60 |   8.00 |    8.00 |            |   1.20 |      | 1.0 |   10.00 |    9.00 |  -1.08 |    -6.64 |   3.96 |    12.24 |
-| ct                   | numeric |  972 |    0.62 |    897 | 78.80 |  35.41 |   35.41 |            | 164.98 |      | 0.2 | 1433.97 | 1433.77 |   5.30 |    33.76 |  31.76 |   101.31 |
-| start                | factor  | 2576 |    0.01 |   2081 |       |        |   16.00 |            |        | 1.00 |     |         |         |        |          |        |          |
-| versie               | factor  | 2592 |    0.00 |      4 |       |        | 1045.00 | 550m       |        | 0.65 |     |         |         |        |          |        |          |
-| age                  | integer |  954 |    0.63 |      7 |  2.60 |   2.00 |    2.00 |            |   0.96 |      | 1.0 |    6.00 |    5.00 |   0.61 |     3.85 |   0.14 |     0.45 |
-| sex                  | integer |  956 |    0.63 |      4 |  1.56 |   2.00 |    2.00 |            |   0.60 |      | 1.0 |    3.00 |    2.00 |   0.55 |     3.46 |  -0.62 |    -1.96 |
-| quit                 | integer | 1132 |    0.56 |      5 |  1.97 |   2.00 |    2.00 |            |   0.81 |      | 1.0 |    4.00 |    3.00 |   0.37 |     2.51 |  -0.68 |    -2.34 |
-| major_changes        | integer | 1113 |    0.57 |      5 |  1.93 |   2.00 |    2.00 |            |   0.69 |      | 1.0 |    4.00 |    3.00 |   1.26 |     8.59 |   3.01 |    10.27 |
-| grant_no             | numeric | 2592 |    0.00 |      2 |  0.05 |   0.00 |    0.00 |            |   0.22 |      | 0.0 |    1.00 |    1.00 |   4.16 |    43.23 |  15.29 |    79.51 |
-| grant_pers_nl        | numeric | 2592 |    0.00 |      2 |  0.21 |   0.00 |    0.00 |            |   0.41 |      | 0.0 |    1.00 |    1.00 |   1.42 |    14.75 |   0.01 |     0.06 |
-| grant_pers_foreign   | numeric | 2592 |    0.00 |      2 |  0.14 |   0.00 |    0.00 |            |   0.34 |      | 0.0 |    1.00 |    1.00 |   2.12 |    22.00 |   2.48 |    12.88 |
-| grant_consortium     | numeric | 2592 |    0.00 |      2 |  0.12 |   0.00 |    0.00 |            |   0.33 |      | 0.0 |    1.00 |    1.00 |   2.30 |    23.90 |   3.29 |    17.09 |
-| grant_faculty        | numeric | 2592 |    0.00 |      2 |  0.08 |   0.00 |    0.00 |            |   0.27 |      | 0.0 |    1.00 |    1.00 |   3.04 |    31.62 |   7.25 |    37.71 |
-| grant_university     | numeric | 2592 |    0.00 |      2 |  0.08 |   0.00 |    0.00 |            |   0.27 |      | 0.0 |    1.00 |    1.00 |   3.13 |    32.52 |   7.78 |    40.48 |
-| grant_foundation     | numeric | 2592 |    0.00 |      2 |  0.08 |   0.00 |    0.00 |            |   0.28 |      | 0.0 |    1.00 |    1.00 |   3.02 |    31.43 |   7.14 |    37.13 |
-| grant_private        | numeric | 2592 |    0.00 |      2 |  0.06 |   0.00 |    0.00 |            |   0.24 |      | 0.0 |    1.00 |    1.00 |   3.59 |    37.29 |  10.86 |    56.49 |
-| nogrant_want         | numeric | 2592 |    0.00 |      2 |  0.01 |   0.00 |    0.00 |            |   0.08 |      | 0.0 |    1.00 |    1.00 |  12.60 |   131.04 | 156.88 |   815.97 |
-| nogrant_necessary    | numeric | 2592 |    0.00 |      2 |  0.01 |   0.00 |    0.00 |            |   0.10 |      | 0.0 |    1.00 |    1.00 |  10.24 |   106.49 | 102.93 |   535.34 |
-| nogrant_early        | numeric | 2592 |    0.00 |      2 |  0.03 |   0.00 |    0.00 |            |   0.16 |      | 0.0 |    1.00 |    1.00 |   6.07 |    63.13 |  34.87 |   181.38 |
-| nogrant_education    | numeric | 2592 |    0.00 |      2 |  0.00 |   0.00 |    0.00 |            |   0.06 |      | 0.0 |    1.00 |    1.00 |  17.91 |   186.19 | 318.75 |  1657.89 |
-| nogrant_time         | numeric | 2592 |    0.00 |      2 |  0.01 |   0.00 |    0.00 |            |   0.10 |      | 0.0 |    1.00 |    1.00 |   9.83 |   102.20 |  94.63 |   492.17 |
-| nogrant_waste        | numeric | 2592 |    0.00 |      2 |  0.01 |   0.00 |    0.00 |            |   0.11 |      | 0.0 |    1.00 |    1.00 |   9.29 |    96.59 |  84.32 |   438.58 |
-| grant_success        | numeric | 2592 |    0.00 |      7 |  1.53 |   0.00 |    0.00 |            |   2.00 |      | 0.0 |    6.00 |    6.00 |   0.88 |     9.15 |  -0.68 |    -3.52 |
-| body_nwo             | numeric | 2592 |    0.00 |      2 |  0.14 |   0.00 |    0.00 |            |   0.35 |      | 0.0 |    1.00 |    1.00 |   2.07 |    21.56 |   2.30 |    11.96 |
-| body_university      | numeric | 2592 |    0.00 |      2 |  0.09 |   0.00 |    0.00 |            |   0.28 |      | 0.0 |    1.00 |    1.00 |   2.94 |    30.59 |   6.66 |    34.63 |
-| body_foreign         | numeric | 2592 |    0.00 |      2 |  0.11 |   0.00 |    0.00 |            |   0.31 |      | 0.0 |    1.00 |    1.00 |   2.54 |    26.45 |   4.47 |    23.26 |
-| body_award           | numeric | 2592 |    0.00 |      2 |  0.07 |   0.00 |    0.00 |            |   0.25 |      | 0.0 |    1.00 |    1.00 |   3.39 |    35.20 |   9.47 |    49.23 |
-| body_none            | numeric | 2592 |    0.00 |      2 |  0.12 |   0.00 |    0.00 |            |   0.33 |      | 0.0 |    1.00 |    1.00 |   2.32 |    24.13 |   3.39 |    17.62 |
-| rol_supervisor       | integer |  956 |    0.63 |      5 |  2.37 |   2.00 |    2.00 |            |   0.91 |      | 1.0 |    4.00 |    3.00 |  -0.10 |    -0.64 |  -0.92 |    -2.90 |
-| rol_head             | integer |  958 |    0.63 |      5 |  2.16 |   2.00 |    2.00 |            |   1.04 |      | 1.0 |    4.00 |    3.00 |   0.45 |     2.82 |  -0.99 |    -3.12 |
-| rol_dean             | integer |  957 |    0.63 |      5 |  2.42 |   2.00 |    2.00 |            |   1.32 |      | 1.0 |    4.00 |    3.00 |   0.15 |     0.93 |  -1.73 |    -5.49 |
-| rol_colleagues       | integer |  957 |    0.63 |      5 |  2.08 |   2.00 |    2.00 |            |   0.77 |      | 1.0 |    4.00 |    3.00 |   0.26 |     1.64 |  -0.43 |    -1.35 |
-| rol_nwo              | integer |  956 |    0.63 |      5 |  2.37 |   2.00 |    2.00 |            |   1.06 |      | 1.0 |    4.00 |    3.00 |   0.20 |     1.24 |  -1.17 |    -3.72 |
-| rol_ocw              | integer |  952 |    0.63 |      5 |  2.43 |   2.00 |    2.00 |            |   1.30 |      | 1.0 |    4.00 |    3.00 |   0.13 |     0.80 |  -1.70 |    -5.36 |
-| rol_mentor           | integer |  956 |    0.63 |      5 |  2.39 |   2.00 |    2.00 |            |   0.97 |      | 1.0 |    4.00 |    3.00 |   0.11 |     0.68 |  -0.99 |    -3.12 |
-| carreer_success      | integer |  971 |    0.63 |      5 |  1.43 |   1.00 |    1.00 |            |   0.77 |      | 1.0 |    4.00 |    3.00 |   1.52 |     9.68 |   0.92 |     2.94 |
-| need_no              | integer |  128 |    0.95 |      2 |  1.00 |   1.00 |    1.00 |            |   0.00 |      | 1.0 |    1.00 |    0.00 |        |          |        |          |
-| need_security        | integer |  158 |    0.94 |      2 |  1.00 |   1.00 |    1.00 |            |   0.00 |      | 1.0 |    1.00 |    0.00 |        |          |        |          |
-| need_team            | integer |  309 |    0.88 |      2 |  1.00 |   1.00 |    1.00 |            |   0.00 |      | 1.0 |    1.00 |    0.00 |        |          |        |          |
-| need_freedom         | integer |  276 |    0.89 |      2 |  1.00 |   1.00 |    1.00 |            |   0.00 |      | 1.0 |    1.00 |    0.00 |        |          |        |          |
-| need_equipment       | integer |   87 |    0.97 |      2 |  1.00 |   1.00 |    1.00 |            |   0.00 |      | 1.0 |    1.00 |    0.00 |        |          |        |          |
-| award_fair           | integer |  967 |    0.63 |      6 |  2.65 |   3.00 |    3.00 |            |   1.02 |      | 1.0 |    5.00 |    4.00 |   0.18 |     1.16 |  -0.80 |    -2.53 |
-| award_lottery        | integer |  966 |    0.63 |      6 |  3.85 |   4.00 |    4.00 |            |   1.03 |      | 1.0 |    5.00 |    4.00 |  -0.83 |    -5.28 |   0.07 |     0.23 |
-| award_time           | integer |  966 |    0.63 |      6 |  3.87 |   4.00 |    4.00 |            |   1.04 |      | 1.0 |    5.00 |    4.00 |  -0.74 |    -4.68 |   0.01 |     0.03 |
-| award_bandwagon      | integer |  966 |    0.63 |      6 |  3.81 |   4.00 |    4.00 |            |   1.09 |      | 1.0 |    5.00 |    4.00 |  -0.80 |    -5.07 |  -0.05 |    -0.14 |
-| who_researcher       | integer |  966 |    0.63 |      5 |  3.30 |   3.00 |    3.00 |            |   0.82 |      | 1.0 |    4.00 |    3.00 |  -1.15 |    -7.29 |   0.86 |     2.73 |
-| who_manager          | integer |  966 |    0.63 |      5 |  2.95 |   3.00 |    3.00 |            |   0.85 |      | 1.0 |    4.00 |    3.00 |  -0.69 |    -4.41 |   0.04 |     0.14 |
-| who_university       | integer |  966 |    0.63 |      5 |  2.72 |   3.00 |    3.00 |            |   0.88 |      | 1.0 |    4.00 |    3.00 |  -0.57 |    -3.60 |  -0.34 |    -1.09 |
-| who_committee        | integer |  966 |    0.63 |      5 |  2.60 |   3.00 |    3.00 |            |   0.90 |      | 1.0 |    4.00 |    3.00 |  -0.39 |    -2.49 |  -0.62 |    -1.97 |
-| who_government       | integer |  966 |    0.63 |      5 |  2.10 |   2.00 |    2.00 |            |   0.89 |      | 1.0 |    4.00 |    3.00 |   0.10 |     0.65 |  -1.17 |    -3.74 |
-| who_society          | integer |  966 |    0.63 |      5 |  2.46 |   3.00 |    3.00 |            |   0.92 |      | 1.0 |    4.00 |    3.00 |  -0.25 |    -1.61 |  -0.88 |    -2.80 |
-| co_private           | integer |  958 |    0.63 |      6 |  3.26 |   3.00 |    3.00 |            |   1.13 |      | 1.0 |    5.00 |    4.00 |  -0.12 |    -0.75 |  -0.90 |    -2.84 |
-| co_connections       | integer |  957 |    0.63 |      6 |  3.20 |   3.00 |    3.00 |            |   1.11 |      | 1.0 |    5.00 |    4.00 |  -0.43 |    -2.71 |  -0.49 |    -1.55 |
-| co_irrelevant        | integer |  956 |    0.63 |      6 |  2.70 |   3.00 |    3.00 |            |   1.21 |      | 1.0 |    5.00 |    4.00 |   0.35 |     2.22 |  -0.83 |    -2.61 |
-| time_research        | integer |  943 |    0.64 |      5 |  3.04 |   3.00 |    3.00 |            |   0.55 |      | 1.0 |    4.00 |    3.00 |  -0.36 |    -2.26 |   1.79 |     5.64 |
-| time_education       | integer |  943 |    0.64 |      5 |  2.95 |   3.00 |    3.00 |            |   0.59 |      | 1.0 |    4.00 |    3.00 |  -1.23 |    -7.73 |   3.70 |    11.64 |
-| time_phds            | integer |  943 |    0.64 |      5 |  2.63 |   3.00 |    3.00 |            |   0.86 |      | 1.0 |    4.00 |    3.00 |  -0.94 |    -5.93 |  -0.13 |    -0.42 |
-| time_management_low  | integer |  938 |    0.64 |      5 |  2.50 |   3.00 |    3.00 |            |   0.79 |      | 1.0 |    4.00 |    3.00 |  -0.87 |    -5.45 |  -0.45 |    -1.39 |
-| time_management_hi   | integer |  933 |    0.64 |      5 |  1.93 |   2.00 |    2.00 |            |   0.95 |      | 1.0 |    4.00 |    3.00 |   0.37 |     2.34 |  -1.34 |    -4.18 |
-| time_service         | integer |  940 |    0.64 |      5 |  2.12 |   2.00 |    2.00 |            |   0.83 |      | 1.0 |    4.00 |    3.00 |  -0.13 |    -0.83 |  -1.34 |    -4.21 |
-| time_admin           | integer |  940 |    0.64 |      5 |  2.62 |   3.00 |    3.00 |            |   0.70 |      | 1.0 |    4.00 |    3.00 |  -0.98 |    -6.12 |   0.43 |     1.34 |
-| time_involvement     | integer |  938 |    0.64 |      5 |  1.61 |   1.00 |    1.00 |            |   0.82 |      | 1.0 |    4.00 |    3.00 |   0.92 |     5.73 |  -0.61 |    -1.90 |
-| time_patients        | integer |  939 |    0.64 |      5 |  1.93 |   1.00 |    1.00 |            |   1.34 |      | 1.0 |    4.00 |    3.00 |   0.81 |     5.08 |  -1.27 |    -3.98 |
-| review_info          | integer |  932 |    0.64 |      6 |  2.50 |   2.00 |    2.00 |            |   1.46 |      | 1.0 |    5.00 |    4.00 |   0.27 |     1.69 |  -1.51 |    -4.72 |
-| review_confidence    | integer |  933 |    0.64 |      7 |  3.84 |   4.00 |    4.00 |            |   0.91 |      | 1.0 |    6.00 |    5.00 |  -0.60 |    -3.74 |   0.69 |     2.14 |
-| review_informative   | integer |  933 |    0.64 |      7 |  3.74 |   4.00 |    4.00 |            |   1.03 |      | 1.0 |    6.00 |    5.00 |  -0.41 |    -2.57 |   0.23 |     0.71 |
-| review_more          | integer |  932 |    0.64 |      7 |  4.17 |   4.00 |    4.00 |            |   0.85 |      | 1.0 |    6.00 |    5.00 |  -0.67 |    -4.19 |   1.04 |     3.25 |
-| review_government    | integer |  926 |    0.64 |      7 |  4.13 |   4.00 |    4.00 |            |   0.91 |      | 1.0 |    6.00 |    5.00 |  -0.64 |    -3.99 |   0.99 |     3.09 |
-| discipline           | factor  |  775 |    0.70 |      4 |       |        | 1817.00 |            |        | 0.53 |     |         |         |        |          |        |          |
-| pos5                 | factor  |  875 |    0.66 |      6 |       |        | 1717.00 |            |        | 0.71 |     |         |         |        |          |        |          |
-| pos9                 | factor  |  827 |    0.68 |      8 |       |        | 1765.00 |            |        | 0.80 |     |         |         |        |          |        |          |
-| institution          | factor  |  920 |    0.65 |     23 |       |        | 1672.00 |            |        | 0.94 |     |         |         |        |          |        |          |
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+name
+</th>
+<th style="text-align:left;">
+type
+</th>
+<th style="text-align:right;">
+n
+</th>
+<th style="text-align:right;">
+missing
+</th>
+<th style="text-align:right;">
+unique
+</th>
+<th style="text-align:right;">
+mean
+</th>
+<th style="text-align:right;">
+median
+</th>
+<th style="text-align:right;">
+mode
+</th>
+<th style="text-align:left;">
+mode_value
+</th>
+<th style="text-align:right;">
+sd
+</th>
+<th style="text-align:right;">
+v
+</th>
+<th style="text-align:right;">
+min
+</th>
+<th style="text-align:right;">
+max
+</th>
+<th style="text-align:right;">
+range
+</th>
+<th style="text-align:right;">
+skew
+</th>
+<th style="text-align:right;">
+skew_2se
+</th>
+<th style="text-align:right;">
+kurt
+</th>
+<th style="text-align:right;">
+kurt_2se
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+consultation_active
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+2558
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.03
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+-29.13
+</td>
+<td style="text-align:right;">
+-300.93
+</td>
+<td style="text-align:right;">
+847.00
+</td>
+<td style="text-align:right;">
+4376.46
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+language
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1414.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.58
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+is_panel_participant
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+2558
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+consent_given
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+2447
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.06
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+-15.54
+</td>
+<td style="text-align:right;">
+-156.98
+</td>
+<td style="text-align:right;">
+239.51
+</td>
+<td style="text-align:right;">
+1210.43
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ktversie
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+10
+</td>
+<td style="text-align:right;">
+4.75
+</td>
+<td style="text-align:right;">
+5.00
+</td>
+<td style="text-align:right;">
+5.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+2.58
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+9.00
+</td>
+<td style="text-align:right;">
+8.00
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+0.84
+</td>
+<td style="text-align:right;">
+-1.20
+</td>
+<td style="text-align:right;">
+-4.16
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_personal_senior
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+210
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:right;">
+0.07
+</td>
+<td style="text-align:right;">
+0.07
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.19
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+2.05
+</td>
+<td style="text-align:right;">
+14.29
+</td>
+<td style="text-align:right;">
+5.12
+</td>
+<td style="text-align:right;">
+17.81
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_team
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+226
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.45
+</td>
+<td style="text-align:right;">
+10.11
+</td>
+<td style="text-align:right;">
+2.72
+</td>
+<td style="text-align:right;">
+9.45
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_personal_ecr
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+217
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.79
+</td>
+<td style="text-align:right;">
+12.45
+</td>
+<td style="text-align:right;">
+4.65
+</td>
+<td style="text-align:right;">
+16.19
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_thematic
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+275
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.11
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+0.74
+</td>
+<td style="text-align:right;">
+0.74
+</td>
+<td style="text-align:right;">
+1.50
+</td>
+<td style="text-align:right;">
+10.46
+</td>
+<td style="text-align:right;">
+2.87
+</td>
+<td style="text-align:right;">
+9.98
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_thematic_co
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+223
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+<td style="text-align:right;">
+27.80
+</td>
+<td style="text-align:right;">
+25.77
+</td>
+<td style="text-align:right;">
+89.71
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_small_first
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+206
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.20
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.90
+</td>
+<td style="text-align:right;">
+13.19
+</td>
+<td style="text-align:right;">
+4.38
+</td>
+<td style="text-align:right;">
+15.24
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_small_second
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+173
+</td>
+<td style="text-align:right;">
+0.10
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+2.48
+</td>
+<td style="text-align:right;">
+17.28
+</td>
+<td style="text-align:right;">
+8.24
+</td>
+<td style="text-align:right;">
+28.68
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_award
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+53
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+3.17
+</td>
+<td style="text-align:right;">
+22.08
+</td>
+<td style="text-align:right;">
+11.62
+</td>
+<td style="text-align:right;">
+40.45
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_first_ecr
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+275
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+<td style="text-align:right;">
+0.22
+</td>
+<td style="text-align:right;">
+0.22
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.24
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.15
+</td>
+<td style="text-align:right;">
+8.01
+</td>
+<td style="text-align:right;">
+1.27
+</td>
+<td style="text-align:right;">
+4.41
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_rolling_ecr
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+434
+</td>
+<td style="text-align:right;">
+0.26
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+<td style="text-align:right;">
+0.25
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.18
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+0.60
+</td>
+<td style="text-align:right;">
+4.18
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+<td style="text-align:right;">
+2.41
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+kt_rolling_senior
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+1158
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+370
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.14
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+1.34
+</td>
+<td style="text-align:right;">
+9.34
+</td>
+<td style="text-align:right;">
+3.93
+</td>
+<td style="text-align:right;">
+13.69
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+work_life
+</td>
+<td style="text-align:left;">
+integer
+</td>
+<td style="text-align:right;">
+927
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+0.92
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.0
+</td>
+<td style="text-align:right;">
+3.00
+</td>
+<td style="text-align:right;">
+3.00
+</td>
+<td style="text-align:right;">
+1.53
+</td>
+<td style="text-align:right;">
+9.52
+</td>
+<td style="text-align:right;">
+1.50
+</td>
+<td style="text-align:right;">
+4.68
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grade
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+908
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+11
+</td>
+<td style="text-align:right;">
+7.60
+</td>
+<td style="text-align:right;">
+8.00
+</td>
+<td style="text-align:right;">
+8.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+1.20
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1.0
+</td>
+<td style="text-align:right;">
+10.00
+</td>
+<td style="text-align:right;">
+9.00
+</td>
+<td style="text-align:right;">
+-1.09
+</td>
+<td style="text-align:right;">
+-6.70
+</td>
+<td style="text-align:right;">
+4.00
+</td>
+<td style="text-align:right;">
+12.35
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+ct
+</td>
+<td style="text-align:left;">
+numeric
+</td>
+<td style="text-align:right;">
+967
+</td>
+<td style="text-align:right;">
+0.62
+</td>
+<td style="text-align:right;">
+893
+</td>
+<td style="text-align:right;">
+79.11
+</td>
+<td style="text-align:right;">
+35.50
+</td>
+<td style="text-align:right;">
+35.50
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+165.35
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.2
+</td>
+<td style="text-align:right;">
+1433.97
+</td>
+<td style="text-align:right;">
+1433.77
+</td>
+<td style="text-align:right;">
+5.28
+</td>
+<td style="text-align:right;">
+33.59
+</td>
+<td style="text-align:right;">
+31.59
+</td>
+<td style="text-align:right;">
+100.52
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+start
+</td>
+<td style="text-align:left;">
+POSIXct, POSIXt
+</td>
+<td style="text-align:right;">
+2558
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+2067
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+16.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+versie
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1037.00
+</td>
+<td style="text-align:left;">
+550m
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+age
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+950
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1624.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.68
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+sex
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+952
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1622.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+quit
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+1121
+</td>
+<td style="text-align:right;">
+0.56
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1453.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.66
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+major_changes
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+1104
+</td>
+<td style="text-align:right;">
+0.57
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1470.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.44
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_no
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2450.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.09
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_pers_nl
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2031.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.33
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_pers_foreign
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2221.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.24
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_consortium
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2256.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.22
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_faculty
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2361.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_university
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2371.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_foundation
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2360.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.15
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_private
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2410.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.12
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_want
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2560.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_necessary
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2550.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_early
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2509.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.05
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_education
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2566.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.01
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_time
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2548.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+nogrant_waste
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2546.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.02
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+grant_success
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1463.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+body_nwo
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2214.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.24
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+body_university
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2353.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.16
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+body_foreign
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2298.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.19
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+body_award
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2396.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.13
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+body_none
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+2574
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+3
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2265.00
+</td>
+<td style="text-align:left;">
+0
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.21
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_supervisor
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+952
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1622.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_head
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+954
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1620.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.72
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_dean
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+953
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1621.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.68
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_colleagues
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+953
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1621.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_nwo
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+952
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1622.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.74
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_ocw
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+948
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1626.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+rol_mentor
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+952
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1622.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.73
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+carreer_success
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+962
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1612.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.43
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+need_no
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+127
+</td>
+<td style="text-align:right;">
+0.95
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2447.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+need_security
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+158
+</td>
+<td style="text-align:right;">
+0.94
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2416.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+need_team
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+307
+</td>
+<td style="text-align:right;">
+0.88
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2267.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+need_freedom
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+275
+</td>
+<td style="text-align:right;">
+0.89
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2299.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+need_equipment
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+87
+</td>
+<td style="text-align:right;">
+0.97
+</td>
+<td style="text-align:right;">
+2
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+2487.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.00
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+award_fair
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+958
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1616.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.73
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+award_lottery
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+award_time
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.71
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+award_bandwagon
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.72
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_researcher
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.60
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_manager
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_university
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_committee
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.66
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_government
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.69
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+who_society
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+957
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1617.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.68
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+co_private
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+953
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1621.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.76
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+co_connections
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+952
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1622.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.74
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+co_irrelevant
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+951
+</td>
+<td style="text-align:right;">
+0.63
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1623.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.77
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_research
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+939
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1635.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.43
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_education
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+939
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1635.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.37
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_phds
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+939
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1635.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.50
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_management_low
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+934
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1640.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.55
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_management_hi
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+929
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1645.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_service
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+936
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1638.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.67
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_admin
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+936
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1638.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.51
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_involvement
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+934
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1640.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.56
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+time_patients
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+935
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+5
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1639.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.49
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+review_info
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+928
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1646.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.72
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+review_confidence
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+929
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1645.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.66
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+review_informative
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+929
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1645.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+review_more
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+928
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1646.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.65
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+review_government
+</td>
+<td style="text-align:left;">
+haven_labelled, vctrs_vctr, double
+</td>
+<td style="text-align:right;">
+923
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+7
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1651.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.67
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+discipline
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+773
+</td>
+<td style="text-align:right;">
+0.70
+</td>
+<td style="text-align:right;">
+4
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1801.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.53
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pos5
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+873
+</td>
+<td style="text-align:right;">
+0.66
+</td>
+<td style="text-align:right;">
+6
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1701.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.71
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+pos9
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+826
+</td>
+<td style="text-align:right;">
+0.68
+</td>
+<td style="text-align:right;">
+8
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1748.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.80
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+institution
+</td>
+<td style="text-align:left;">
+factor
+</td>
+<td style="text-align:right;">
+918
+</td>
+<td style="text-align:right;">
+0.64
+</td>
+<td style="text-align:right;">
+23
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+1656.00
+</td>
+<td style="text-align:left;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+0.94
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+<td style="text-align:right;">
+</td>
+</tr>
+</tbody>
+</table>
 
 ### Legend
 
