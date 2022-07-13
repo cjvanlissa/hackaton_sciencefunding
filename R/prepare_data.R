@@ -50,5 +50,11 @@ dat$work_life <- as.integer(dat$work_life)
 type <- sapply(dat, function(x){class(x)[1]})
 dat <- dat[, !type == "character"]
 
-write.csv(dat, "../data/dat_cj.csv", row.names = F)
-dat <- read.csv("../data/dat_cj.csv", stringsAsFactors = TRUE)
+# Label dummies correctly
+tmp <- dat[, grep("(^grant|nogrant|body)", names(dat))]
+tmp[is.na(tmp)] <- 0
+dat[, grep("(^grant|nogrant|body)", names(dat))] <- tmp
+
+dat$versie <- factor(dat$versie, labels = c("550m", "400m", "900m"))
+
+closed_data(dat, synthetic = FALSE)
