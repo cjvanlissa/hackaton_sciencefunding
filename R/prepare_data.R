@@ -19,7 +19,7 @@ library(haven)
 # write.csv(testfile, "dja.csv", row.names = FALSE)
 
 dat <- haven::read_dta("../data/DJA_forDJA.dta")
-
+namz <- read.csv("../data/Variabelen_DJA_shortlabels.csv")
 factors <- sapply(dat, function(x){
   !is.null(names(attr(x, "label")))
 })
