@@ -10,3 +10,5 @@
 *.log
 *.tex
 .Rproj.user
+!data/Variabelen_DJA_shortlabels.csv
+*.dta
