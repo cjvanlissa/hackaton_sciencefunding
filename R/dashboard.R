@@ -26,5 +26,3 @@ keep <- c("language", "ktversie", "kt_personal_senior",
           "review_more", "review_government", "discipline", "pos5", "pos9",
           "institution")
 dat <- dat[, keep]
-
-ExPanD(dat)
