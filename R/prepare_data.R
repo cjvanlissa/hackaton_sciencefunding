@@ -16,9 +16,12 @@ dat$id <- sample.int(nrow(dat), nrow(dat), replace = FALSE)
 dat <- dat[order(dat$id), ]
 
 # Remove empty variables
-dat[c("session_id", "id_panel", "client_id", "started_at", "completed_at", "completion_time", "consultation_active", "is_panel_participant", "panel_id", "panel_source", "b1812_consent__created_at", "b1812_consent__consent_given",
+dat[c("session_id", "id_panel", "client_id", #"started_at",
+      "completed_at", "completion_time", "consultation_active", "is_panel_participant", "panel_id", "panel_source", "b1812_consent__created_at", "b1812_consent__consent_given",
       "created_at", "b2215_questions__created_at", "b2216_questions__created_at", "b2212_questions__created_at",
       "start")] <- NULL
+dates <- data.frame(dat$id, date = as.Date(dat$started_at))
+dat[["started_at"]] <- NULL
 
 # Rename ------------------------------------------------------------------
 
@@ -64,6 +67,9 @@ dat$applied_grant[dat$grant_success %in% c("Ja, minder dan 10% van mijn aanvrage
 levels(dat$successful_applications)[levels(dat$successful_applications) == "Ik heb nog nooit een onderzoeksaanvraag gedaan"] <- NA
 
 dat$successful_applications <- ordered(dat$successful_applications, levels = c("Nee", "Ja, minder dan 10% van mijn aanvragen", "Ja, 10-20% van mijn aanvragen", "Ja, 20-30% van mijn aanvragen", "Ja, meer dan 30% van mijn aanvragen"))
+
+
+# Try to reconstruct missing language -------------------------------------
 
 # is_english <- dat$work_life %in% c("I don't want to say", "No", "Yes, to a small degree", "Yes, to a big degree")
 # is_dutch <- dat$work_life %in% c("Wil / kan ik niet zeggen", "Nee", "Ja, in kleine mate ", "Ja, in grote mate ")
@@ -163,17 +169,36 @@ dat$inst <- droplevels(dat$inst)
 # names(dat_norecode) <- paste0("orig_", names(dat_norecode))
 # dat <- cbind(dat, dat_norecode)
 
+
+# Reorder property values -------------------------------------------------
+
+orderz <- lapply(list.files("../syntax", pattern = "Hernoemen", full.names = TRUE), function(f){
+  f <- readLines(f)
+  f <- f[grepl(" kt\\d{1,2}$", f)]
+  as.integer(gsub("^.+?_p(\\d{+})_.+?$", "\\1", f)[order(as.integer(gsub("^.+?(\\d{1,2})$", "\\1", f)))])
+})
+
+flz <- lapply(list.files("../data", pattern = "Property val", full.names = TRUE), function(f){
+  read.csv(f, sep = ";")
+})
+
+for(n in 1:3){
+  flz[[n]]$qnum <- as.integer(gsub("^(\\d{+})-.*$", "\\1", flz[[n]][[2]]))
+  flz[[n]]$qnum <- match(flz[[n]]$qnum, orderz[[n]])
+  flz[[n]] <- flz[[n]][order(flz[[n]]$version, flz[[n]]$qnum), ]
+}
+
 # Chiel's code ------------------------------------------------------------
 
 # Load files with study characteristics
 # 550 M is the total budget
-df1 = read.csv('../data/Property values 1.csv', sep=';')
+df1 = flz[[1]]
 # df1['1708-gemiddelde-succeskans-per-voorstel'].values.reshape(9, 11)
 # 400 M is the total budget
-df2 = read.csv('../data/Property values 2.csv', sep=';')
+df2 = flz[[2]]
 # df2['1836-gemiddelde-succeskans-per-voorstel'].values.reshape(9, 11)
 # 900 M is the total budget
-df3 = read.csv('../data/Property values 3.csv', sep=';')
+df3 = flz[[3]]
 # df3['1844-gemiddelde-succeskans-per-voorstel'].values.reshape(9, 11)
 
 # First, we read the actual maximum budget values of which the kt values are a fraction from the table.
@@ -201,6 +226,10 @@ df_kt <- df_kt * divby
 #
 # tmp = rowSums(df_kt)
 # table(tmp > 1)
+# exceeds <- dat[which(tmp>1), ]
+# dates <- dates$date[dates$dat.id %in% dat$id]
+# median(dates[tmp <= 1], na.rm = T)
+# median(dates[tmp > 1], na.rm = T)
 
 # openxlsx::write.xlsx(dat, gsub("[ :]", "_", paste0("data_", Sys.time(), ".xlsx")))
 
