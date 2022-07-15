@@ -65,7 +65,10 @@ levels(dat$successful_applications)[levels(dat$successful_applications) == "Ik h
 
 dat$successful_applications <- ordered(dat$successful_applications, levels = c("Nee", "Ja, minder dan 10% van mijn aanvragen", "Ja, 10-20% van mijn aanvragen", "Ja, 20-30% van mijn aanvragen", "Ja, meer dan 30% van mijn aanvragen"))
 
-
+# is_english <- dat$work_life %in% c("I don't want to say", "No", "Yes, to a small degree", "Yes, to a big degree")
+# is_dutch <- dat$work_life %in% c("Wil / kan ik niet zeggen", "Nee", "Ja, in kleine mate ", "Ja, in grote mate ")
+#
+# table(dat$language, is_english, useNA= "always")
 
 levels(dat$work_life)[levels(dat$work_life) %in% c("Wil / kan ik niet zeggen", "I don't want to say","")] <- NA
 dat$work_life <- ordered(dat$work_life, levels = c("Nee", "No",
@@ -136,22 +139,25 @@ dat$inst[dat$inst == 'Eindhoven University of Technology'] <- 'Technische Univer
 dat$inst[dat$inst == 'Anders, niet in de lijst'] <- 'Overig'
 dat$inst <- droplevels(dat$inst)
 
-type_orig <- sapply(dat[names(dat_norecode)], function(x){class(x)[1]})
-type_new <- sapply(dat_norecode, function(x){class(x)[1]})
-dat_norecode <- dat_norecode[names(dat_norecode)[!type_orig == type_new]]
 
-out <- lapply(names(dat_norecode), function(nam){
-  i = dat_norecode[[nam]]
-  whatclass <- class(i)[1]
-  tmp <- table(i, dat[[nam]])
-  tmp <- as.data.frame.table(tmp)
-  tmp <- tmp[!tmp$Freq == 0, ]
-  res <- as.list(as.character(tmp$i))
-  names(res) <- tmp$Var2
-  c(list(class = whatclass), res)
-})
-names(out) <- names(dat_norecode)
-yaml::write_yaml(out, file = "value_labels.yml")
+# Make YAML with value labels ---------------------------------------------
+
+# type_orig <- sapply(dat[names(dat_norecode)], function(x){class(x)[1]})
+# type_new <- sapply(dat_norecode, function(x){class(x)[1]})
+# dat_norecode <- dat_norecode[names(dat_norecode)[!type_orig == type_new]]
+#
+# out <- lapply(names(dat_norecode), function(nam){
+#   i = dat_norecode[[nam]]
+#   whatclass <- class(i)[1]
+#   tmp <- table(i, dat[[nam]])
+#   tmp <- as.data.frame.table(tmp)
+#   tmp <- tmp[!tmp$Freq == 0, ]
+#   res <- as.list(as.character(tmp$i))
+#   names(res) <- tmp$Var2
+#   c(list(class = whatclass), res)
+# })
+# names(out) <- names(dat_norecode)
+# yaml::write_yaml(out, file = "value_labels.yml")
 
 #
 # names(dat_norecode) <- paste0("orig_", names(dat_norecode))
@@ -196,10 +202,10 @@ df_kt <- df_kt * divby
 # tmp = rowSums(df_kt)
 # table(tmp > 1)
 
-openxlsx::write.xlsx(dat, gsub("[ :]", "_", paste0("data_", Sys.time(), ".xlsx")))
+# openxlsx::write.xlsx(dat, gsub("[ :]", "_", paste0("data_", Sys.time(), ".xlsx")))
 
 closed_data(dat, synthetic = FALSE)
-
-
-ismis <- is.na(dat)
-names(dat)[(colSums(ismis) == nrow(dat))]
+#
+#
+# ismis <- is.na(dat)
+# names(dat)[(colSums(ismis) == nrow(dat))]
