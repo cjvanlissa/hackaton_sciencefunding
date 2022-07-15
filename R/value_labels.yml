@@ -1,0 +1,351 @@
+work_life:
+  class: ordered
+  '1': Nee
+  '2': 'Ja, in kleine mate'
+  '3': 'Ja, in grote mate'
+versie:
+  class: factor
+  '1': '1'
+  '2': '2'
+  '3': '3'
+age:
+  class: ordered
+  '1': Tot en met 30
+  '2': 31-40
+  '3': 41-50
+  '4': 51-60
+  '5': 61-70
+  '6': 71 plus
+quit:
+  class: ordered
+  '1': Nee
+  '2': Ja, in het verleden
+  '3': Ja, ik overweeg de wetenschap te verlaten
+major_changes:
+  class: ordered
+  '1': Geen wijzigingen
+  '2': Kleine wijzigingen
+  '3': Grote wijzigingen
+grant_no:
+  class: ordered
+  '0': Nee
+  '1': Ja
+grant_pers_nl:
+  class: ordered
+  '0': Nee
+  '1': Ja, een persoonlijke beurs in Nederland
+grant_pers_foreign:
+  class: ordered
+  '0': Nee
+  '1': Ja, een persoonlijke beurs in het buitenland, of een Europese beurs
+grant_consortium:
+  class: ordered
+  '0': Nee
+  '1': Ja, als leider van een team of consortium
+grant_faculty:
+  class: ordered
+  '0': Nee
+  '1': Ja, een onderzoeksvoorstel voor een faculteit
+grant_university:
+  class: ordered
+  '0': Nee
+  '1': Ja, een onderzoeksvoorstel voor een universiteit
+grant_foundation:
+  class: ordered
+  '0': Nee
+  '1': Ja, een onderzoeksvoorstel voor een stichting
+grant_private:
+  class: ordered
+  '0': Nee
+  '1': Ja, een onderzoeksvoorstel voor een bedrijf of overheid
+nogrant_want:
+  class: ordered
+  '0': Nee
+  '1': Ik wil dat niet doen.
+nogrant_necessary:
+  class: ordered
+  '0': Nee
+  '1': Ik heb dat niet nodig. Ik hoef dat niet te doen van mijn leidinggevende.
+nogrant_early:
+  class: ordered
+  '0': Nee
+  '1': Ik vind het nog te vroeg in mijn carriere om dat te doen.
+nogrant_education:
+  class: ordered
+  '0': Nee
+  '1': Ik vind onderwijs belangrijker om mijn tijd in te steken.
+nogrant_time:
+  class: ordered
+  '0': Nee
+  '1': Ik heb er geen tijd voor.
+nogrant_waste:
+  class: ordered
+  '0': Nee
+  '1': Ik ben bang dat het zonde van mijn tijd is.
+successful_applications:
+  class: ordered
+  '1': Nee
+  '2': Ja, minder dan 10% van mijn aanvragen
+  '3': Ja, 10-20% van mijn aanvragen
+  '4': Ja, 20-30% van mijn aanvragen
+  '5': Ja, meer dan 30% van mijn aanvragen
+body_nwo:
+  class: ordered
+  '0': Nee
+  '1': NWO
+body_university:
+  class: ordered
+  '0': Nee
+  '1': Binnen mijn eigen universiteit/faculteit
+body_foreign:
+  class: ordered
+  '0': Nee
+  '1': Een Europese of andere buitenlandse financier
+body_award:
+  class: ordered
+  '0': Nee
+  '1': Een award-commissie
+body_none:
+  class: ordered
+  '0': Nee
+  '1': Nee
+rol_supervisor:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_head:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_dean:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_colleagues:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_nwo:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_ocw:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+rol_mentor:
+  class: ordered
+  '1': Geen rol
+  '2': Een kleine rol
+  '3': Een redelijk grote rol
+  '4': Een zeer grote rol
+carreer_success:
+  class: ordered
+  '1': Nee
+  '2': Ja
+need_no:
+  class: ordered
+  '0': Nee
+  '1': Niets, ik ben nu waar ik qua carrièrepad wil zijn
+need_security:
+  class: ordered
+  '0': Nee
+  '1': Een beurs voor een aantal jaren om mijn eigen baan veilig te stellen
+need_team:
+  class: ordered
+  '0': Nee
+  '1': Een beurs om mijn team uit te breiden
+need_freedom:
+  class: ordered
+  '0': Nee
+  '1': Een beurs om wat meer vrijheid te hebben mijn eigen tijd in te delen
+need_equipment:
+  class: ordered
+  '0': Nee
+  '1': Een beurs om apparatuur of infrastructuur aan te schaffen.
+award_fair:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+award_lottery:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+award_time:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+award_bandwagon:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+who_researcher:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+who_manager:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+who_university:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+who_committee:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+who_government:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+who_society:
+  class: ordered
+  '1': Geen invloed
+  '2': Neutraal
+  '3': Wat invloed
+  '4': Veel invloed
+co_private:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+co_connections:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+co_irrelevant:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+time_research:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_education:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_phds:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_management_low:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_management_hi:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_service:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_admin:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_involvement:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+time_patients:
+  class: ordered
+  '1': Geen tijd
+  '2': Bijna geen tijd
+  '3': Veel tijd
+  '4': Bijna al mijn tijd
+review_info:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+review_confidence:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+review_informative:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+review_more:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
+review_government:
+  class: ordered
+  '1': Helemaal niet mee eens
+  '2': Niet mee eens
+  '3': Neutraal
+  '4': Mee eens
+  '5': Helemaal mee eens
